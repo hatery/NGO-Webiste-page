@@ -1,0 +1,807 @@
+/* =================================
+   JEEVAN JYOTI - NGO WEBSITE
+   COMMON CSS FOR ALL 5 PAGES
+================================= */
+
+/* 1. GLOBAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #292929;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* 2. NAVIGATION BAR */
+
+header {
+    width: 100%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+.navbar {
+    max-width: 1250px;
+    min-height: 85px;
+    margin: auto;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #222222;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #f36b3f;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f36b3f;
+}
+
+.nav-btn {
+    background: #f36b3f;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-btn:hover {
+    background: #d84d24;
+    transform: translateY(-3px);
+}
+
+
+/* 3. COMMON BUTTONS */
+
+.main-btn {
+    display: inline-block;
+    background: #f36b3f;
+    color: white;
+    padding: 13px 27px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #d84d24;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    padding: 11px 25px;
+    border-radius: 6px;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #f36b3f;
+}
+
+
+/* 4. HOME PAGE HERO SECTION */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 10%;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,0.82),
+        rgba(0,0,0,0.25)
+    ),
+    url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1600")
+    center/cover no-repeat;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.tagline {
+    color: #ff946f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #ff865d;
+}
+
+.hero-content > p:not(.tagline) {
+    max-width: 550px;
+    color: #eeeeee;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+
+/* 5. COMMON SECTION */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 90px 25px;
+    text-align: center;
+}
+
+.section-tag {
+    color: #f36b3f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.section p {
+    color: #777777;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+/* 6. HOME PAGE CAUSES */
+
+.home-causes {
+    padding: 85px 25px;
+    text-align: center;
+    background: #fff8f5;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+}
+
+.cause-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.cause-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.cause-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.cause-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.cause-card h3 {
+    font-size: 21px;
+    padding: 20px 22px 5px;
+}
+
+.cause-card p {
+    padding: 0 22px 25px;
+    color: #777777;
+    line-height: 1.7;
+}
+
+.home-causes > .main-btn {
+    margin-top: 40px;
+}
+
+
+/* 7. CALL TO ACTION SECTION */
+
+.cta {
+    background: #f36b3f;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.cta h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+    color: #fff1eb;
+}
+
+.cta .main-btn {
+    background: white;
+    color: #f36b3f;
+}
+
+.cta .main-btn:hover {
+    background: #fff0e9;
+}
+
+
+/* 8. COMMON PAGE BANNER */
+
+.page-banner {
+    background: linear-gradient(120deg, #fff0e9, #ffe1d5);
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.page-banner h1 {
+    font-size: 43px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+.page-banner p {
+    font-size: 16px;
+    color: #777777;
+}
+
+
+/* 9. ABOUT PAGE */
+
+.about-section {
+    max-width: 1150px;
+    margin: 80px auto;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #777777;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+/* 10. MISSION, VISION AND VALUES */
+
+.mission-section {
+    max-width: 1150px;
+    margin: 50px auto 90px;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.mission-card {
+    padding: 35px 25px;
+    background: #fff8f5;
+    border-radius: 12px;
+    border-bottom: 4px solid #f36b3f;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-7px);
+}
+
+.mission-card h2 {
+    color: #f36b3f;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    color: #777777;
+    line-height: 1.8;
+}
+
+
+/* 11. CAUSES PAGE */
+
+.causes-section {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.causes-section .cause-card img {
+    height: 280px;
+}
+
+.cause-info {
+    padding: 25px;
+}
+
+.cause-info h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.cause-info p {
+    color: #777777;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+
+/* 12. DONATION PAGE */
+
+.donation-section {
+    padding: 75px 20px;
+    background: #ffffff;
+}
+
+.donation-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 35px;
+
+    background: #fff8f5;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+
+    text-align: center;
+}
+
+.donation-box h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.donation-box > p {
+    color: #777777;
+}
+
+.amounts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.amounts label {
+    background: white;
+    padding: 15px 8px;
+    border: 2px solid #f36b3f;
+    border-radius: 7px;
+    color: #f36b3f;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.amounts label:hover {
+    background: #f36b3f;
+    color: white;
+}
+
+.amounts input {
+    accent-color: #f36b3f;
+    margin-right: 5px;
+}
+
+.payment-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.payment-box h2 {
+    font-size: 25px;
+}
+
+.payment-box p {
+    color: #777777;
+    margin: 12px 0;
+}
+
+.qr-code {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    padding: 10px;
+    background: white;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.note {
+    font-size: 12px;
+    margin-top: 20px !important;
+}
+
+
+/* 13. CONTACT PAGE */
+
+.contact-section {
+    max-width: 1150px;
+    margin: 80px auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+}
+
+.contact-info h2,
+.contact-form-box h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    color: #777777;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    background: #fff8f5;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #f36b3f;
+}
+
+.contact-item h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #777777;
+}
+
+
+/* 14. CONTACT FORM */
+
+.contact-form-box {
+    background: #fff8f5;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f36b3f;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    font-family: inherit;
+}
+
+
+/* 15. FOOTER */
+
+footer {
+    background: #202020;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+footer h2 span {
+    color: #f36b3f;
+}
+
+footer p {
+    color: #bbbbbb;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f36b3f;
+}
+
+.copyright {
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+
+/* 16. RESPONSIVE DESIGN - TABLET */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .about-section {
+        gap: 30px;
+    }
+
+    .cause-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mission-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* 17. RESPONSIVE DESIGN - MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 50px 7%;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-content > p:not(.tagline) {
+        font-size: 14px;
+    }
+
+    .secondary-btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .section h2,
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .cause-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page-banner {
+        padding: 65px 15px;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        margin: 55px auto;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+
+    .causes-section {
+        grid-template-columns: 1fr;
+    }
+
+    .donation-box {
+        padding: 25px 15px;
+    }
+
+    .donation-box h2 {
+        font-size: 23px;
+    }
+
+    .amounts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-form-box {
+        padding: 20px;
+    }
+
+    .cta h2 {
+        font-size: 27px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+}
+
+
+/* END OF JEEVAN JYOTI CSS */
