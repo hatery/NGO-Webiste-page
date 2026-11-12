@@ -4,94 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Donate | Jeevan Jyoti</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <h2 class="logo">Jeevan <span>Jyoti.</span></h2>
+<!-- HEADER -->
+<header class="donate-header">
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="causes.html">Causes</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="logo">
+        <span>Jeevan</span> Jyoti.
+        <small>Light for a Better Tomorrow</small>
+    </div>
 
-        <a href="donate.html" class="nav-btn">Donate Now</a>
+    <nav class="donate-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="causes.html">Causes</a>
+        <a href="donate.html" class="active">Donate</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="header-btn">♥ Donate Now</a>
     </nav>
+
 </header>
 
-<section class="page-banner">
-    <h1>Make A Donation</h1>
-    <p>Your kindness can bring hope to someone's life.</p>
+
+<!-- HERO SECTION -->
+<section class="donate-hero">
+
+    <h1>Make a <span>Donation</span></h1>
+
+    <p>Your small contribution can bring hope to someone's life.</p>
+
+    <div class="heart-divider">──── ♥ ────</div>
+
 </section>
 
-<section class="donation-section">
 
-    <div class="donation-box">
+<!-- DONATION SECTION -->
+<section class="donate-main">
 
-        <p class="section-tag">SUPPORT OUR MISSION</p>
+    <div class="donate-card">
 
-        <h2>Choose Your Donation Amount</h2>
-
-        <p>Every contribution makes a difference.</p>
-
-        <div class="amounts">
-            <label>
-                <input type="radio" name="amount" value="100">
-                ₹100
-            </label>
-
-            <label>
-                <input type="radio" name="amount" value="500">
-                ₹500
-            </label>
-
-            <label>
-                <input type="radio" name="amount" value="1000">
-                ₹1000
-            </label>
-
-            <label>
-                <input type="radio" name="amount" value="2000">
-                ₹2000
-            </label>
+        <div class="support-label">
+            ♥ SUPPORT OUR MISSION
         </div>
 
-        <div class="payment-box">
-            <h2>Donate Through UPI</h2>
+        <h2>Select Donation Amount</h2>
 
-            <p>Scan the QR code using your UPI app.</p>
+        <p class="description">
+            Every contribution makes a difference.
+        </p>
 
-            <img src="images/qr-code.png"
-                 alt="Jeevan Jyoti Donation QR Code"
-                 class="qr-code">
 
-            <p><strong>UPI ID:</strong> yourname@upi</p>
+        <!-- PRESET AMOUNTS -->
+        <div class="amount-options">
 
-            <a href="upi://pay?pa=yourname@upi&pn=Jeevan%20Jyoti&cu=INR"
-               class="main-btn">
-                Pay Using UPI
-            </a>
+            <button type="button" class="amount-btn"
+                data-amount="100">₹100</button>
 
-            <p class="note">
-                Replace the sample UPI ID and QR code
-                with verified donation details.
-            </p>
+            <button type="button" class="amount-btn"
+                data-amount="500">₹500</button>
+
+            <button type="button" class="amount-btn"
+                data-amount="1000">₹1000</button>
+
+            <button type="button" class="amount-btn"
+                data-amount="2000">₹2000</button>
+
         </div>
+
+
+        <!-- CUSTOM AMOUNT -->
+        <h3>Or Enter Custom Amount</h3>
+
+        <div class="custom-input">
+            <span>₹</span>
+
+            <input
+                type="number"
+                id="customAmount"
+                placeholder="Enter any amount (e.g. 10, 25, 500)"
+                min="1"
+                step="1"
+            >
+        </div>
+
+
+        <!-- SELECTED AMOUNT -->
+        <div class="selected-amount">
+            Selected Amount:
+            <span id="selectedAmount">₹0</span>
+        </div>
+
+
+        <!-- UPI SECTION -->
+        <div class="upi-section">
+
+            <img
+                src="images/qr-code.png"
+                alt="Jeevan Jyoti UPI QR Code"
+            >
+
+            <div class="upi-info">
+
+                <h3>Donate Through UPI</h3>
+
+                <p>Scan the QR code using any UPI app.</p>
+
+                <p>
+                    <strong>UPI ID:</strong>
+                    <span>yourname@upi</span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DONATE BUTTON -->
+        <button type="button" class="pay-btn" id="donateBtn">
+            ♥ Pay Using UPI
+        </button>
+
+        <p class="donate-note">
+            Your kindness helps us create a brighter future.
+        </p>
 
     </div>
 
 </section>
 
-<footer>
-    <h2>Jeevan <span>Jyoti.</span></h2>
+
+<!-- FOOTER -->
+<footer class="donate-footer">
+
+    <h2>Jeevan Jyoti.</h2>
+
     <p>Spreading Hope, Happiness and Humanity.</p>
-    <p>© 2026 Jeevan Jyoti. All Rights Reserved.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="causes.html">Causes</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <p>
+        © <span id="year"></span> Jeevan Jyoti.
+        All Rights Reserved.
+    </p>
+
 </footer>
 
 </body>

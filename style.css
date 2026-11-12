@@ -439,91 +439,353 @@ header {
 
 
 /* 12. DONATION PAGE */
-
-.donation-section {
-    padding: 75px 20px;
+.donate-header {
     background: #ffffff;
+    padding: 15px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.donation-box {
-    max-width: 700px;
-    margin: auto;
-    padding: 40px 35px;
+.donate-header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f58216;
+}
 
-    background: #fff8f5;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+.donate-header .logo span {
+    color: #222;
+}
 
+.donate-header .logo small {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    color: #555;
+}
+
+.donate-nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    flex-wrap: wrap;
+}
+
+.donate-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.donate-nav a:hover,
+.donate-nav a.active {
+    color: #f58216;
+}
+
+.donate-nav .header-btn {
+    background: #f58216;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+}
+
+
+/* HERO SECTION */
+
+.donate-hero {
+    text-align: center;
+    padding: 35px 15px;
+    background: #fff5e9;
+}
+
+.donate-hero h1 {
+    font-size: 45px;
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.donate-hero h1 span {
+    color: #f58216;
+}
+
+.donate-hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.heart-divider {
+    color: #f58216;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+
+/* DONATION BACKGROUND */
+
+.donate-main {
+    min-height: 680px;
+    padding: 45px 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-image: url("donation-bg .png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* DONATION CARD */
+
+.donate-card {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px;
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.91);
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
     text-align: center;
 }
 
-.donation-box h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+.support-label {
+    display: inline-block;
+    background: #f58216;
+    color: white;
+    padding: 9px 22px;
+    border-radius: 25px;
+    font-weight: bold;
 }
 
-.donation-box > p {
-    color: #777777;
+.donate-card h2 {
+    font-size: 30px;
+    margin: 20px 0 10px;
+    color: #222;
 }
 
-.amounts {
+.description {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.donate-card h3 {
+    margin: 25px 0 15px;
+    color: #292929;
+}
+
+
+/* PRESET AMOUNT BUTTONS */
+
+.amount-options {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin: 35px 0;
+    gap: 12px;
 }
 
-.amounts label {
-    background: white;
-    padding: 15px 8px;
-    border: 2px solid #f36b3f;
-    border-radius: 7px;
-    color: #f36b3f;
-    font-weight: 700;
+.amount-btn {
+    padding: 13px 5px;
+    border: 2px solid #f58216;
+    background: transparent;
+    color: #e87916;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.amounts label:hover {
-    background: #f36b3f;
+.amount-btn:hover,
+.amount-btn.selected {
+    background: #f58216;
     color: white;
 }
 
-.amounts input {
-    accent-color: #f36b3f;
-    margin-right: 5px;
-}
 
-.payment-box {
+/* CUSTOM AMOUNT */
+
+.custom-input {
+    display: flex;
+    align-items: center;
     background: white;
-    padding: 30px 20px;
+    border: 1px solid #ccc;
     border-radius: 12px;
-    margin-top: 25px;
+    padding: 12px 15px;
+    margin-top: 15px;
 }
 
-.payment-box h2 {
-    font-size: 25px;
+.custom-input:focus-within {
+    border-color: #f58216;
 }
 
-.payment-box p {
-    color: #777777;
-    margin: 12px 0;
+.custom-input span {
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
 }
 
-.qr-code {
-    width: 190px;
-    height: 190px;
-    object-fit: contain;
-    padding: 10px;
-    background: white;
-    border: 1px solid #eeeeee;
+.custom-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 17px;
+}
+
+
+/* SELECTED AMOUNT */
+
+.selected-amount {
+    margin-top: 18px;
+    padding: 13px;
     border-radius: 10px;
-    margin: 20px auto;
+    background: #ffead2;
+    font-size: 19px;
+    font-weight: bold;
 }
 
-.note {
-    font-size: 12px;
-    margin-top: 20px !important;
+.selected-amount span {
+    color: #e87916;
+}
+
+
+/* UPI SECTION */
+
+.upi-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+}
+
+.upi-section img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.upi-info {
+    text-align: left;
+}
+
+.upi-info h3 {
+    margin: 0 0 10px;
+}
+
+.upi-info p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+
+/* PAYMENT BUTTON */
+
+.pay-btn {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 35px;
+    background: #f58216;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pay-btn:hover {
+    background: #d96d08;
+    transform: translateY(-2px);
+}
+
+.donate-note {
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+.donate-footer {
+    background: #222;
+    color: white;
+    padding: 25px 5%;
+    text-align: center;
+}
+
+.donate-footer h2 {
+    color: #f58216;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #f58216;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .donate-header {
+        justify-content: center;
+    }
+
+    .donate-nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .donate-hero h1 {
+        font-size: 32px;
+    }
+
+    .donate-main {
+        justify-content: center;
+        padding: 25px 15px;
+    }
+
+    .donate-card {
+        padding: 25px 15px;
+    }
+
+    .amount-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .upi-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .upi-info {
+        text-align: center;
+    }
+
+    .pay-btn {
+        width: 100%;
+    }
+
 }
 
 
