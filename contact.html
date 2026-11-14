@@ -9,98 +9,134 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar">
-        <h2 class="logo">Jeevan <span>Jyoti.</span></h2>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Jeevan <span>Jyoti</span></a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="causes.html">Causes</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="causes.html">Causes</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
 
-        <a href="donate.html" class="nav-btn">Donate Now</a>
-    </nav>
-</header>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </header>
 
-<section class="page-banner">
-    <h1>Contact Us</h1>
-    <p>We are always happy to hear from you.</p>
-</section>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div>
+            <span class="contact-tag">WE WOULD LOVE TO HEAR FROM YOU</span>
+            <h1>Let's Make a <span>Difference</span> Together</h1>
+            <p>
+                Have a question, an idea, or want to support our mission?
+                Get in touch with the Jeevan Jyoti team.
+            </p>
+        </div>
+    </section>
 
-<section class="contact-section">
+    <!-- Contact Section -->
+    <section class="contact-section">
 
-    <div class="contact-info">
+        <div class="contact-info">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>Let's Start a Conversation</h2>
+            <p>
+                Your support and suggestions help us bring positive
+                changes to people's lives.
+            </p>
 
-        <h2>Get In Touch</h2>
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h3>Our Location</h3>
+                    <p>Lucknow, Uttar Pradesh, India</p>
+                </div>
+            </div>
 
-        <p>
-            Have a question, want to volunteer or
-            support our mission? Contact us.
-        </p>
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <div>
+                    <h3>Email Us</h3>
+                    <p>yourngo@email.com</p>
+                </div>
+            </div>
 
-        <div class="contact-item">
-            <h3>📧 Email</h3>
-            <p>yourngo@email.com</p>
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <h3>Call Us</h3>
+                    <p>+91 XXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="contact-note">
+                <h3>Every Message Matters!</h3>
+                <p>
+                    Together, we can spread kindness, hope and happiness.
+                </p>
+            </div>
         </div>
 
-        <div class="contact-item">
-            <h3>📞 Phone</h3>
-            <p>+91 9876543210</p>
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form and share your thoughts with us.</p>
+
+            <form class="contact-form"
+                  action="mailto:yourngo@email.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="What is this regarding?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Write your message here..."
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                    Send Message <span>➜</span>
+                </button>
+            </form>
         </div>
 
-        <div class="contact-item">
-            <h3>📍 Address</h3>
-            <p>Lucknow, Uttar Pradesh, India</p>
-        </div>
+    </section>
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Jeevan <span>Jyoti</span></h2>
+        <p>Spreading Hope. Creating Smiles. Changing Lives.</p>
+        <p>© <span id="year"></span> Jeevan Jyoti. All Rights Reserved.</p>
+    </footer>
 
-    <div class="contact-form-box">
-
-        <h2>Send Us A Message</h2>
-
-        <form action="mailto:yourngo@email.com"
-              method="post"
-              enctype="text/plain">
-
-            <input type="text"
-                   name="Name"
-                   placeholder="Your Full Name"
-                   required>
-
-            <input type="email"
-                   name="Email"
-                   placeholder="Your Email Address"
-                   required>
-
-            <input type="text"
-                   name="Subject"
-                   placeholder="Subject"
-                   required>
-
-            <textarea name="Message"
-                      rows="6"
-                      placeholder="Write your message here..."
-                      required></textarea>
-
-            <button type="submit" class="main-btn">
-                Send Message
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<footer>
-    <h2>Jeevan <span>Jyoti.</span></h2>
-    <p>Spreading Hope, Happiness and Humanity.</p>
-    <p>© 2026 Jeevan Jyoti. All Rights Reserved.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
