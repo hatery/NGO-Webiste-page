@@ -5,6 +5,11 @@
 
 /* 1. GLOBAL STYLING */
 
+.brand-icon {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
 * {
     margin: 0;
     padding: 0;
