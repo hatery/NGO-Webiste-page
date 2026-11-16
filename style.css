@@ -52,6 +52,11 @@ header {
     justify-content: space-between;
     gap: 20px;
 }
+.brand-icon {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
 
 .logo {
     font-size: 26px;
