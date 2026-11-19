@@ -1,135 +1,501 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeevan Jyoti | Home</title>
+    <title>Jeevan Jyoti | Spreading Hope, Happiness and Humanity</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ===================== NAVBAR (one for the whole page) ===================== -->
 <header>
     <nav class="navbar">
-        
-        <h2 class="logo">Jeevan <span>Jyoti.</span></h2>
+
+        <a href="#home" class="brand">
+            <img src="logo.png" alt="Jeevan Jyoti logo" class="brand-icon">
+            <h2 class="logo">Jeevan <span>Jyoti.</span></h2>
+        </a>
 
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="causes.html">Causes</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#causes">Causes</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <a href="donate.html" class="nav-btn">Donate Now</a>
+        <a href="#donate" class="nav-btn">Donate Now</a>
     </nav>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-content">
 
-        <p class="tagline">SPREAD LOVE • SPREAD HOPE</p>
+<!-- ===================== HOME ===================== -->
+<div id="home">
 
-        <h1>
-            Be The Reason<br>
-            Someone <span>Smiles Today.</span>
-        </h1>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+
+            <p class="tagline">SPREAD LOVE • SPREAD HOPE</p>
+
+            <h1>
+                Be The Reason<br>
+                Someone <span>Smiles Today.</span>
+            </h1>
+
+            <p>
+                Jeevan Jyoti is dedicated to helping people
+                through education, food, healthcare and kindness.
+                Together, we can make a difference.
+            </p>
+
+            <a href="#donate" class="main-btn">
+                Donate Now ❤️
+            </a>
+
+            <a href="#about" class="secondary-btn">
+                Learn More
+            </a>
+
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="section">
+        <p class="section-tag">WELCOME TO JEEVAN JYOTI</p>
+
+        <h2>Bringing Hope Into Every Life</h2>
 
         <p>
-            Jeevan Jyoti is dedicated to helping people
-            through education, food, healthcare and kindness.
-            Together, we can make a difference.
+            We believe that every person deserves a better life.
+            Our mission is to support underprivileged people
+            and create a brighter future for everyone.
         </p>
 
-        <a href="donate.html" class="main-btn">
-            Donate Now ❤️
-        </a>
+        <a href="#about" class="main-btn">About Our NGO</a>
+    </section>
 
-        <a href="about.html" class="secondary-btn">
-            Learn More
-        </a>
+    <!-- OUR WORK -->
+    <section class="home-causes">
 
-    </div>
-</section>
+        <div class="section-heading">
+            <p class="section-tag">WHAT WE DO</p>
+            <h2>Our Areas Of Work</h2>
+        </div>
 
-<!-- INTRODUCTION -->
-<section class="section">
-    <p class="section-tag">WELCOME TO JEEVAN JYOTI</p>
+        <div class="cause-container">
 
-    <h2>Bringing Hope Into Every Life</h2>
+            <div class="cause-card">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700"
+                     alt="Children education">
 
-    <p>
-        We believe that every person deserves a better life.
-        Our mission is to support underprivileged people
-        and create a brighter future for everyone.
-    </p>
+                <h3>Education</h3>
+                <p>Helping children get access to quality education.</p>
+            </div>
 
-    <a href="about.html" class="main-btn">About Our NGO</a>
-</section>
+            <div class="cause-card">
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=700"
+                     alt="Food support">
 
-<!-- OUR WORK -->
-<section class="home-causes">
+                <h3>Food Support</h3>
+                <p>Providing nutritious food to families in need.</p>
+            </div>
 
-    <div class="section-heading">
-        <p class="section-tag">WHAT WE DO</p>
-        <h2>Our Areas Of Work</h2>
-    </div>
+            <div class="cause-card">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700"
+                     alt="Healthcare">
 
-    <div class="cause-container">
+                <h3>Healthcare</h3>
+                <p>Supporting access to essential healthcare services.</p>
+            </div>
+
+        </div>
+
+        <a href="#causes" class="main-btn">Explore All Causes</a>
+
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Your Small Help Can Change A Life.</h2>
+        <p>Come forward and become a part of our mission.</p>
+        <a href="#donate" class="main-btn">Support Our Mission</a>
+    </section>
+
+</div>
+
+
+<!-- ===================== ABOUT US ===================== -->
+<div id="about">
+
+    <section class="page-banner">
+        <h1>About Jeevan Jyoti</h1>
+        <p>Know our story, mission and vision.</p>
+    </section>
+
+    <section class="about-section">
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900"
+                 alt="Children receiving support">
+        </div>
+
+        <div class="about-content">
+            <p class="section-tag">WHO WE ARE</p>
+
+            <h2>We Believe In Humanity</h2>
+
+            <p>
+                Jeevan Jyoti is an NGO initiative focused on
+                helping underprivileged communities and
+                improving lives through social support.
+            </p>
+
+            <p>
+                We believe that every small contribution can
+                create a meaningful difference in society.
+            </p>
+
+            <a href="#donate" class="main-btn">Join Our Mission</a>
+        </div>
+
+    </section>
+
+    <section class="mission-section">
+
+        <div class="mission-card">
+            <h2>Our Mission</h2>
+            <p>
+                To provide education, food, healthcare and
+                opportunities to people who need support.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <h2>Our Vision</h2>
+            <p>
+                To build a compassionate society where
+                everyone has the opportunity to live with dignity.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <h2>Our Values</h2>
+            <p>
+                Humanity, kindness, equality, transparency
+                and service to society.
+            </p>
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- ===================== CAUSES ===================== -->
+<div id="causes">
+
+    <section class="page-banner">
+        <h1>Our Causes</h1>
+        <p>Choose a cause and help us create change.</p>
+    </section>
+
+    <section class="causes-section">
 
         <div class="cause-card">
             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700"
-                 alt="Children education">
+                 alt="Education">
 
-            <h3>Education</h3>
-            <p>Helping children get access to quality education.</p>
+            <div class="cause-info">
+                <h2>Education For All</h2>
+                <p>
+                    Help children access books, school supplies
+                    and educational opportunities.
+                </p>
+                <a href="#donate" class="main-btn">Support Education</a>
+            </div>
         </div>
 
         <div class="cause-card">
             <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=700"
-                 alt="Food support">
+                 alt="Food donation">
 
-            <h3>Food Support</h3>
-            <p>Providing nutritious food to families in need.</p>
+            <div class="cause-info">
+                <h2>Food For Everyone</h2>
+                <p>
+                    Help provide nutritious meals and food
+                    support to families in need.
+                </p>
+                <a href="#donate" class="main-btn">Donate For Food</a>
+            </div>
         </div>
 
         <div class="cause-card">
             <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700"
                  alt="Healthcare">
 
-            <h3>Healthcare</h3>
-            <p>Supporting access to essential healthcare services.</p>
+            <div class="cause-info">
+                <h2>Healthcare Support</h2>
+                <p>
+                    Support access to essential healthcare
+                    and medical assistance.
+                </p>
+                <a href="#donate" class="main-btn">Support Healthcare</a>
+            </div>
         </div>
 
-    </div>
+        <div class="cause-card">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=700"
+                 alt="Community support">
 
-    <a href="causes.html" class="main-btn">Explore All Causes</a>
+            <div class="cause-info">
+                <h2>Community Development</h2>
+                <p>
+                    Help communities build better opportunities
+                    and a brighter future.
+                </p>
+                <a href="#donate" class="main-btn">Support Community</a>
+            </div>
+        </div>
 
-</section>
+    </section>
 
-<!-- CALL TO ACTION -->
-<section class="cta">
-    <h2>Your Small Help Can Change A Life.</h2>
-    <p>Come forward and become a part of our mission.</p>
-    <a href="donate.html" class="main-btn">Support Our Mission</a>
-</section>
+</div>
 
-<!-- FOOTER -->
+
+<!-- ===================== DONATE ===================== -->
+<div id="donate">
+
+    <!-- HERO SECTION -->
+    <section class="donate-hero">
+
+        <h1>Make a <span>Donation</span></h1>
+
+        <p>Your small contribution can bring hope to someone's life.</p>
+
+        <div class="heart-divider">──── ♥ ────</div>
+
+    </section>
+
+    <!-- DONATION SECTION -->
+    <section class="donate-main">
+
+        <div class="donate-card">
+
+            <div class="support-label">
+                ♥ SUPPORT OUR MISSION
+            </div>
+
+            <h2>Select Donation Amount</h2>
+
+            <p class="description">
+                Every contribution makes a difference.
+            </p>
+
+            <!-- PRESET AMOUNTS -->
+            <div class="amount-options">
+
+                <button type="button" class="amount-btn"
+                    data-amount="100">₹100</button>
+
+                <button type="button" class="amount-btn"
+                    data-amount="500">₹500</button>
+
+                <button type="button" class="amount-btn"
+                    data-amount="1000">₹1000</button>
+
+                <button type="button" class="amount-btn"
+                    data-amount="2000">₹2000</button>
+
+            </div>
+
+            <!-- CUSTOM AMOUNT -->
+            <h3>Or Enter Custom Amount</h3>
+
+            <div class="custom-input">
+                <span>₹</span>
+
+                <input
+                    type="number"
+                    id="customAmount"
+                    placeholder="Enter any amount (e.g. 10, 25, 500)"
+                    min="1"
+                    step="1"
+                >
+            </div>
+
+            <!-- SELECTED AMOUNT -->
+            <div class="selected-amount">
+                Selected Amount:
+                <span id="selectedAmount">₹0</span>
+            </div>
+
+            <!-- UPI SECTION -->
+            <div class="upi-section">
+
+                <img
+                    src="images/qr-code.png"
+                    alt="Jeevan Jyoti UPI QR Code"
+                >
+
+                <div class="upi-info">
+
+                    <h3>Donate Through UPI</h3>
+
+                    <p>Scan the QR code using any UPI app.</p>
+
+                    <p>
+                        <strong>UPI ID:</strong>
+                        <span id="upiId">yourname@upi</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- DONATE BUTTON -->
+            <button type="button" class="pay-btn" id="donateBtn">
+                ♥ Pay Using UPI
+            </button>
+
+            <p class="donate-note">
+                Your kindness helps us create a brighter future.
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- ===================== CONTACT ===================== -->
+<div id="contact">
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div>
+            <span class="contact-tag">WE WOULD LOVE TO HEAR FROM YOU</span>
+            <h1>Let's Make a <span>Difference</span> Together</h1>
+            <p>
+                Have a question, an idea, or want to support our mission?
+                Get in touch with the Jeevan Jyoti team.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+
+        <div class="contact-info">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>Let's Start a Conversation</h2>
+            <p>
+                Your support and suggestions help us bring positive
+                changes to people's lives.
+            </p>
+
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h3>Our Location</h3>
+                    <p>Lucknow, Uttar Pradesh, India</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <div>
+                    <h3>Email Us</h3>
+                    <p>yourngo@email.com</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <h3>Call Us</h3>
+                    <p>+91 XXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="contact-note">
+                <h3>Every Message Matters!</h3>
+                <p>
+                    Together, we can spread kindness, hope and happiness.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form and share your thoughts with us.</p>
+
+            <form class="contact-form"
+                  action="mailto:yourngo@email.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="What is this regarding?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Write your message here..."
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                    Send Message <span>➜</span>
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- ===================== FOOTER (one for the whole page) ===================== -->
 <footer>
     <h2>Jeevan <span>Jyoti.</span></h2>
 
     <p>Spreading Hope, Happiness and Humanity.</p>
 
     <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="causes.html">Causes</a>
-        <a href="donate.html">Donate</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#causes">Causes</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
     </div>
 
     <p class="copyright">
@@ -137,5 +503,6 @@
     </p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
