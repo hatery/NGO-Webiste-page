@@ -1,11 +1,4 @@
 
-/* =================================
-   JEEVAN JYOTI - NGO WEBSITE
-   COMMON CSS FOR ALL 5 PAGES
-================================= */
-
-/* 1. GLOBAL STYLING */
-
 * {
     margin: 0;
     padding: 0;
@@ -29,8 +22,6 @@ img {
     display: block;
 }
 
-
-/* 2. NAVIGATION BAR */
 
 header {
     width: 100%;
@@ -537,7 +528,7 @@ header {
     justify-content: flex-end;
     align-items: center;
 
-    background-image: url("donation-bg .png");
+    background-image: url("donation-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1228,6 +1219,3 @@ footer p {
     }
 
 }
-
-
-/* END OF JEEVAN JYOTI CSS */
