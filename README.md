@@ -1,82 +1,56 @@
-# NGO-Website-page
+# Jeevan Jyoti - NGO Website 🌟
 
-
-# Jeevan Jyoti – NGO & Charity Website
-
-## About the Project
-Jeevan Jyoti is a modern and responsive NGO and charity website developed using HTML, CSS, and JavaScript.
-
-The main purpose of this project is to spread awareness about social causes and encourage people to support underprivileged communities through education, food support, and healthcare.
-
-## Objectives
-- To create a modern and user-friendly NGO website.
-- To spread awareness about social welfare activities.
-- To provide information about different social causes.
-- To encourage people to support charitable activities.
-- To provide donation information through a UPI QR code.
-- To create a responsive website for different devices.
-
-## Features
-- Home page with an attractive hero section.
-- About Us page with NGO information.
-- Causes page displaying social initiatives.
-- Donation page with multiple donation amount options and UPI QR code.
-- Contact page with contact information and a message form.
-- Responsive design for desktop and mobile devices.
-- Easy navigation between all pages.
-
-## Technologies Used
-- HTML5 – Website structure.
-- CSS3 – Styling and responsive design.
-- JavaScript – Interactive functionality.
-- Git – Version control.
-- GitHub – Repository hosting and collaboration.
-- Visual Studio Code – Code editor.
-
-## Project Folder Structure
-
-Jeevan-Jyoti/
-│
-├── index.html
-├── about.html
-├── causes.html
-├── donate.html
-├── contact.html
-├── style.css
-├── script.js
-├── images/
-│   └── qr-code.png
-└── README.md
-
-## How to Run the Project
-
-1. Download or clone the repository.
-2. Open the project folder in Visual Studio Code.
-3. Open the index.html file.
-4. Run the website using a browser or Live Server extension.
-5. Navigate through the different pages.
-
-## Pages Included
-1. Home
-2. About Us
-3. Causes
-4. Donate
-5. Contact
-
-## Team Members
-- Harsh Kushwaha
-- Piyush Kumar
-- Yash Raj Kohli
-
-## Future Improvements
-- Integration of a secure online payment gateway.
-- Backend support for storing contact form submissions.
-- Volunteer registration functionality.
-- Donation tracking system.
-
-## Conclusion
-Jeevan Jyoti is designed to provide a simple and attractive online platform for spreading social awareness and encouraging people to contribute towards a better society.
+A modern, responsive single-page website for **Jeevan Jyoti NGO**, dedicated to supporting underprivileged communities through education, healthcare, nutrition, and empowerment programs.
 
 ---
 
-Developed as a Group Project.
+## 📌 Project Overview
+This project consolidates all organizational sections into a smooth, single-page experience featuring seamless scrolling navigation, interactive donation options, and responsive styling.
+
+### 🚀 Key Features
+- **Hero & Mission**: Introduction to Jeevan Jyoti's vision and ongoing social initiatives.
+- **About Us**: Information about the organization's mission, values, and volunteer community.
+- **Key Causes**:
+  - 📚 Child Education & School Supplies
+  - 🍲 Food Distribution & Hunger Relief
+  - 🏥 Healthcare Camps & Medical Support
+- **Interactive Donation Section**:
+  - Quick-select donation amounts (₹250, ₹500, ₹1,000, ₹2,500).
+  - Custom amount input field.
+  - Seamless UPI donation flow with dynamic QR code preview.
+- **Contact & Volunteer Form**: Direct contact details and volunteer sign-up.
+
+---
+
+## 🛠️ Tech Stack
+- **HTML5**: Semantic single-page layout with anchor navigation (`#home`, `#about`, `#causes`, `#donate`, `#contact`).
+- **CSS3**: Responsive flexbox/grid layout with custom styling and smooth scrolling.
+- **JavaScript (ES6)**: Real-time donation amount selection and UPI payment handling.
+
+---
+
+## 📂 Project Structure
+```text
+NGO-Webiste-page/
+├── index.html        # Main single-page website
+├── style.css         # Styling and layout rules
+├── script.js         # Interactive donation & UPI scripts
+├── logo.png          # Organization logo
+└── README.md         # Documentation
+```
+
+---
+
+## 💻 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/USERNAME/REPO-NAME.git
+   cd NGO-Webiste-page
+   ```
+2. Open the folder in **VS Code**.
+3. Right-click `index.html` and select **Open with Live Server** (or open `index.html` in any web browser).
+
+---
+
+## 🤝 Contributing & Team
+Developed collaboratively as part of the Web Development Project.
