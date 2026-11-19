@@ -1,7 +1,5 @@
-
 /* =================================
    JEEVAN JYOTI - NGO WEBSITE
-   COMMON CSS FOR ALL 5 PAGES
 ================================= */
 
 /* 1. GLOBAL STYLING */
@@ -1231,3 +1229,23 @@ footer p {
 
 
 /* END OF JEEVAN JYOTI CSS */
+
+
+/* 18. SINGLE PAGE ADDITIONS */
+
+/* Logo + name together in the navbar */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand .brand-icon {
+    width: 52px;
+    height: 52px;
+}
+
+/* Keep section headings from hiding under the sticky navbar */
+#home, #about, #causes, #donate, #contact {
+    scroll-margin-top: 90px;
+}
