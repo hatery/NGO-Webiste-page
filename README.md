@@ -26,9 +26,8 @@ The main purpose of this project is to spread awareness about social causes and 
 - Easy navigation between all pages.
 
 ## Technologies Used
-- HTML5 – Website structure.
-- CSS3 – Styling and responsive design.
-- JavaScript – Interactive functionality.
+- HTML – Website structure.
+- CSS – Styling and responsive design.
 - Git – Version control.
 - GitHub – Repository hosting and collaboration.
 - Visual Studio Code – Code editor.
@@ -53,7 +52,7 @@ Jeevan-Jyoti/
 1. Download or clone the repository.
 2. Open the project folder in Visual Studio Code.
 3. Open the index.html file.
-4. Run the website using a browser or Live Server extension.
+4. Run the website using a browser.
 5. Navigate through the different pages.
 
 ## Pages Included
@@ -75,8 +74,10 @@ Jeevan-Jyoti/
 - Donation tracking system.
 
 ## Conclusion
-Jeevan Jyoti is designed to provide a simple and attractive online platform for spreading social awareness and encouraging people to contribute towards a better society.
+Jeevan Jyoti is a dedicated web-based initiative designed to provide a simple, user-friendly, and visually attractive online platform for spreading social awareness and encouraging people to contribute towards a better society. Built with a focus on clarity, trust, and ease of navigation, the platform highlights critical social causes—such as education, healthcare, and community welfare—while showcasing transparent impact metrics and straightforward ways to get involved. Ultimately, Jeevan Jyoti aims to inspire collective social responsibility by turning passive visitors into active volunteers and donors who help create lasting, positive change in the lives of underprivileged individuals.
 
 ---
 
 Developed as a Group Project.
+<img width="940" height="440" alt="image" src="https://github.com/user-attachments/assets/b5ef8a5a-a2c1-4b0e-a94b-6879271eca00" />
+
